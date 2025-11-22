@@ -15,6 +15,7 @@ import { JwtModule } from '@nestjs/jwt';
 import { ThrottlerGuard } from '@nestjs/throttler';
 import { AuthModule } from './features/auth/auth.module';
 import { HealthModule } from './features/health/health.module';
+import { InvoicingModule } from './features/invoicing/invoicing.module';
 import { MailModule } from './features/mail/mail.module';
 
 /**
@@ -54,6 +55,7 @@ import { MailModule } from './features/mail/mail.module';
     MailModule,
     HealthModule,
     FileModule,
+    InvoicingModule,
   ],
 })
 export class AppModule {}
